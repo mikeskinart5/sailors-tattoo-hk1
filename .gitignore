@@ -1,0 +1,68 @@
+# dependencies
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# database
+db/*.db
+db/*.db-journal
+db/custom.db
+prisma/db/
+
+# logs
+*.log
+dev.log
+dev.out.log
+server.log
+
+# sandbox junk (not needed for production)
+tool-results
+tests
+upload
+examples
+download
+scripts
+
+# large media files (use CDN instead)
+public/video/*.mp4
+public/video/*.mov
+public/video/*.avi
+
+# skills (sandbox only)
+skills
+
+# IDE
+.vscode
+.idea
+
+# OS
+Thumbs.db

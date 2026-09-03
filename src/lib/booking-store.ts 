@@ -1,0 +1,130 @@
+import { z } from "zod";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Booking schema, types, and constants
+// Shared between the client form (booking-modal.tsx) and the server
+// action (actions/booking.ts) so they can't drift out of sync.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const TATTOO_STYLES = [
+  "Tribal & Pattern",
+  "Portraits",
+  "Black & Grey Realism",
+  "Color Realism",
+  "Graffiti",
+  "Custom",
+] as const;
+
+export const TATTOO_SIZES = [
+  "small",     // under 5cm
+  "medium",     // 5–15cm
+  "large",      // 15–30cm
+  "sleeve",     // full arm/leg sleeve
+  "back-piece", // full back / half-sleeve+
+] as const;
+
+export const BOOKING_STATUSES = [
+  "pending",
+  "contacted",
+  "scheduled",
+  "completed",
+  "declined",
+] as const;
+
+export const BookingSchema = z.object({
+  name: z
+    .string()
+    .min(2, { message: "Name must be at least 2 characters." })
+    .max(80, { message: "Name is too long." }),
+  email: z
+    .string()
+    .email({ message: "Please enter a valid email address." }),
+  phone: z
+    .string()
+    .min(6, { message: "Please enter a valid phone number." })
+    .max(30, { message: "Phone number is too long." }),
+  style: z.enum(TATTOO_STYLES, {
+    message: "Please select a tattoo style.",
+  }),
+  placement: z
+    .string()
+    .min(2, { message: "Tell us where you want the tattoo." })
+    .max(100, { message: "Placement text is too long." }),
+  size: z.enum(TATTOO_SIZES, {
+    message: "Please select an approximate size.",
+  }),
+  description: z
+    .string()
+    .min(20, { message: "Please describe your idea in at least 20 characters." })
+    .max(2000, { message: "Description is too long (max 2000 characters)." }),
+  preferredDates: z
+    .string()
+    .max(200, { message: "Preferred dates text is too long." })
+    .optional()
+    .or(z.literal("")),
+  referenceUrl: z
+    .string()
+    .url({ message: "Please enter a valid URL." })
+    .optional()
+    .or(z.literal("")),
+});
+
+export type BookingInput = z.infer<typeof BookingSchema>;
+export type BookingActionResult ="use server";
+
+import { db } from "@/lib/db";
+import {
+  BookingSchema,
+  type BookingActionResult,
+} from "@/lib/booking-schema";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Server action — validate + insert a booking request into the database
+//
+// Returns either { ok: true, id } or { ok: false, errors: { field: [msg] } }
+// so the client can surface validation errors next to the right form field.
+// ─────────────────────────────────────────────────────────────────────────────
+export async function createBooking(
+  raw: unknown,
+): Promise<BookingActionResult> {
+  const parsed = BookingSchema.safeParse(raw);
+
+  if (!parsed.success) {
+    const errors: Record<string, string[]> = {};
+    for (const issue of parsed.error.issues) {
+      const key = issue.path[0]?.toString() ?? "_root";
+      (errors[key] ??= []).push(issue.message);
+    }
+    return { ok: false, errors };
+  }
+
+  try {
+    const booking = await db.booking.create({
+      data: {
+        name: parsed.data.name,
+        email: parsed.data.email,
+        phone: parsed.data.phone,
+        style: parsed.data.style,
+        placement: parsed.data.placement,
+        size: parsed.data.size,
+        description: parsed.data.description,
+        preferredDates: parsed.data.preferredDates || null,
+        referenceUrl: parsed.data.referenceUrl || null,
+      },
+      select: { id: true },
+    });
+
+    return { ok: true, id: booking.id };
+  } catch (err) {
+    console.error("[createBooking] DB insert failed:", err);
+    return {
+      ok: false,
+      errors: {
+        _root: [
+          "Could not save your request. Please try again or email sailorstattoohk@yahoo.com directly.",
+        ],
+      },
+    };
+  }
+}  | { ok: true; id: string }
+  | { ok: false; errors: Record<string, string[]> };
