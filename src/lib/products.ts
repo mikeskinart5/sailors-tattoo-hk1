@@ -46,8 +46,8 @@ export const PRODUCTS: Product[] = [
       "Black cotton t-shirt with the Sailors Tattoo black cat logo screen-printed in gold on the chest. Unisex.",
     price: "USD 35",
     image:
-      "https://placehold.co/600x600/0a0a0a/c8a25a?text=Black+Cat+Tee&font=raleway",
-    paymentUrl: "https://buy.stripe.com/test_9AQ3eqb8q9NN4Os5ku",
+      image: "/shop/ship-2-badge.jpg",
+    paymentUrl: "https://www.etsy.com/listing/1234567891/sailors-tattoo-hk-badge-tee",
     featured: true,
   },
   {
