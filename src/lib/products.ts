@@ -39,28 +39,17 @@ export const PRODUCTS: Product[] = [
     paymentUrl: "https://buy.stripe.com/test_8wM3eq4agdUV6HI9ba",
   },
   {
-    id: "merch-tee-black",
-    type: "merch",
-    title: "Black Cat Tee",
-    description:
-      "Black cotton t-shirt with the Sailors Tattoo black cat logo screen-printed in gold on the chest. Unisex.",
-    price: "USD 35",
-    image:
-      image: "/shop/ship-2-badge.jpg",
-    paymentUrl: "https://www.etsy.com/listing/1234567891/sailors-tattoo-hk-badge-tee",
-    featured: true,
-  },
-  {
-    id: "merch-tote",
-    type: "merch",
-    title: "Canvas Tote",
-    description:
-      "Natural cotton canvas tote bag with the Sailors Tattoo wordmark. Carries everything, lasts forever.",
-    price: "USD 25",
-    image:
-      "https://placehold.co/600x600/0a0a0a/f4f1ea?text=Tote+Bag&font=raleway",
-    paymentUrl: "https://buy.stripe.com/test_5kA3eq0Z2btZ4Os7tT",
-  },
+  id: "merch-tee-black",
+  type: "merch",
+  title: "Skull Emblem Tee",
+  description:
+    "Black cotton t-shirt with the Sailors Tattoo skull emblem design. American traditional style with bold lines. Unisex. Printed on demand and shipped worldwide via Printify.",
+  price: "USD 35",
+  image: "https://placehold.co/600x600/0a0a0a/c8a25a?text=Skull+Emblem+Tee&font=raleway",
+  paymentUrl: "https://www.etsy.com/hk-en/listing/4568783275/sailors-tattoo-skull-emblem-t-shirt",
+  featured: true,
+},
+
   {
     id: "merch-prints",
     type: "merch",
