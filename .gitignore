@@ -52,10 +52,7 @@ examples
 download
 scripts
 
-# large media files (use CDN instead)
-public/video/*.mp4
-public/video/*.mov
-public/video/*.avi
+
 
 # skills (sandbox only)
 skills
