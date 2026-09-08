@@ -100,7 +100,7 @@ export function Hero() {
               <img
                 src="/black-cat-logo.png"
                 alt="Sailors Tattoo HK — black cat mark with silver and gold shadow"
-                className="h-auto w-[100px] mix-blend-screen object-contain animate-seal-float-rotate sm:w-[120px] md:w-[140px]"
+                className="h-auto w-[140px] mix-blend-screen object-contain animate-seal-float-rotate sm:w-[1700px] md:w-[200px]"
               />
               <div className="flex items-center gap-2 pr-1 text-eyebrow text-foreground/60">
                 <span
