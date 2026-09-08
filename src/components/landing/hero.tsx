@@ -23,28 +23,28 @@ export function Hero() {
       className="relative flex min-h-[100svh] w-full flex-col overflow-hidden bg-background"
     >
       {/* Background video of Mike tattooing — full-bleed cinematic */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          className="h-full w-full object-cover opacity-50 mix-blend-luminosity saturate-0 contrast-110"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/video/mikeskinart-live.mp4" type="video/mp4" />
-        </video>
-        {/* Cinematic overlays — darken edges and fade to background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(10,10,11,0.7)_100%)]" />
-        {/* Subtle film grain — adds a filmic texture */}
-        <div
-          className="absolute inset-0 opacity-[0.08] mix-blend-overlay"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-          }}
-        />
-      </div>
+<div className="absolute inset-0 z-0 overflow-hidden">
+  <video
+    className="h-full w-full object-cover opacity-50 mix-blend-luminosity saturate-0 contrast-110"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source src="/video/mikeskinart-live.mp4" type="video/mp4" />
+  </video>
+  {/* Cinematic overlays — darken edges and fade to background */}
+  <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(10,10,11,0.7)_100%)]" />
+  {/* Subtle film grain — adds a filmic texture */}
+  <div
+    className="absolute inset-0 opacity-[0.08] mix-blend-overlay"
+    style={{
+      backgroundImage:
+        "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+    }}
+  />
+</div>
 
       {/* Giant logo watermark behind headline — very subtle, screen-blended */}
       <motion.img
