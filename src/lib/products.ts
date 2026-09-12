@@ -56,9 +56,9 @@ export const PRODUCTS: Product[] = [
     title: "Limited Design Tee",
     description:
       "A2 archival giclée prints of three signature tattoo designs, signed and numbered. Edition of 50.",
-    price: "USD 120",
+    price: "USD 38",
     image:
-      "https://placehold.co/600x600/0a0a0a/c8a25a?text=Limited+Prints&font=raleway",
+      "https://placehold.co/600x600/0a0a0a/c8a25a?text=Limited+Tee&font=raleway",
     paymentUrl: "https://buy.stripe.com/test_aEUaIL7sC28Z4Os8wM7eV00",
   },
   {
@@ -67,7 +67,7 @@ export const PRODUCTS: Product[] = [
     title: "Limited Design Tee",
     description:
       "Tee featuring tattoo motifs.",
-    price: "USD 12",
+    price: "USD 38",
     image:
       "https://placehold.co/600x600/0a0a0a/f4f1ea?text=Tee&font=raleway",
     paymentUrl: "https://buy.stripe.com/test_7sI3eq6oC28Z8xi7sXZEH00",
