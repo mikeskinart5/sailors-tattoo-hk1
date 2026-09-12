@@ -12,7 +12,7 @@ export interface Product {
   soldOut?: boolean;
 }
 
-export const stripeMode: "test" | "live" = "test";
+export const stripeMode: "test" | "live" = "live";
 
 export const PRODUCTS: Product[] = [
   {
