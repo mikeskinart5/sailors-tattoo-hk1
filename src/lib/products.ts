@@ -44,7 +44,7 @@ export const PRODUCTS: Product[] = [
   description:
     "Classic design — it's the circular badge with the sailing ship, roses, anchors, and "SAILORS TATTOO HONG KONG". Unisex. Printed on demand and shipped worldwide via Printify.",
   price: "USD 35",
-    image: "/shop/skull-tee.jpg",
+    image: "/shop/sailors badge transparent.png",
   paymentUrl: "https://www.etsy.com/hk-en/listing/4568783275/sailors-tattoo-skull-emblem-t-shirt",
   featured: true,
 },
