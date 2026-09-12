@@ -44,7 +44,7 @@ export const PRODUCTS: Product[] = [
   description:
     "Sailors Tattoo HK emblem tee. Circular badge design featuring a tall ship in stormy seas, red roses, golden anchors, and lightning — classic American traditional tattoo style. Printed on premium black cotton. Unisex. Printed on demand, shipped worldwide.",
   price: "USD 35",
-  image: "/shop/sailors-badge.jpg",
+  image: "/shop/sailors-badge-transparent.png",
   paymentUrl: "https://www.etsy.com/hk-en/listing/4568783275/sailors-tattoo-skull-emblem-t-shirt",
   featured: true,
 },  
