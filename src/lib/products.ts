@@ -37,17 +37,18 @@ export const PRODUCTS: Product[] = [
       "https://placehold.co/600x800/0a0a0a/f4f1ea?text=Sketches&font=raleway",
     paymentUrl: "https://buy.stripe.com/test_8wM3eq4agdUV6HI9ba",
   },
-  {
+{
   id: "merch-tee-black",
   type: "merch",
-  title: "Sailor Badge Tee",
+  title: "Sailors Badge Tee",
   description:
-    "Classic design — it's the circular badge with the sailing ship, roses, anchors, and "SAILORS TATTOO HONG KONG". Unisex. Printed on demand and shipped worldwide via Printify.",
+    "Sailors Tattoo HK emblem tee. Circular badge design featuring a tall ship in stormy seas, red roses, golden anchors, and lightning — classic American traditional tattoo style. Printed on premium black cotton. Unisex. Printed on demand, shipped worldwide.",
   price: "USD 35",
-    image: "/shop/sailors badge transparent.png",
+  image: "/shop/sailors-badge.jpg",
   paymentUrl: "https://www.etsy.com/hk-en/listing/4568783275/sailors-tattoo-skull-emblem-t-shirt",
   featured: true,
-},
+},  
+  
 
   {
     id: "merch-prints",
