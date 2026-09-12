@@ -40,9 +40,9 @@ export const PRODUCTS: Product[] = [
   {
   id: "merch-tee-black",
   type: "merch",
-  title: "Skull Emblem Tee",
+  title: "Sailor Badge Tee",
   description:
-    "Black cotton t-shirt with the Sailors Tattoo skull emblem design. American traditional style with bold lines. Unisex. Printed on demand and shipped worldwide via Printify.",
+    "Classic design — it's the circular badge with the sailing ship, roses, anchors, and "SAILORS TATTOO HONG KONG". Unisex. Printed on demand and shipped worldwide via Printify.",
   price: "USD 35",
     image: "/shop/skull-tee.jpg",
   paymentUrl: "https://www.etsy.com/hk-en/listing/4568783275/sailors-tattoo-skull-emblem-t-shirt",
