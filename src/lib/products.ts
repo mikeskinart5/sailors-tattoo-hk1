@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
   
 
   {
-    id: "merch-prints",
+    id: "merch-tee-black",
     type: "merch",
     title: "Limited Prints",
     description:
@@ -62,9 +62,9 @@ export const PRODUCTS: Product[] = [
     paymentUrl: "https://buy.stripe.com/test_aEUaIL7sC28Z4Os8wM7eV00",
   },
   {
-    id: "merch-stickers",
+    id: "merch-tee-black",
     type: "merch",
-    title: "Sticker Pack",
+    title: "Limited Prints",
     description:
       "A pack of 5 vinyl die-cut stickers featuring tattoo motifs. Weatherproof, dishwasher-safe.",
     price: "USD 12",
