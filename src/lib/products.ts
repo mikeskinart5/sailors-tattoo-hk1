@@ -66,10 +66,10 @@ export const PRODUCTS: Product[] = [
     type: "merch",
     title: "Limited Design Tee",
     description:
-      "A pack of 5 vinyl die-cut stickers featuring tattoo motifs. Weatherproof, dishwasher-safe.",
+      "Tee featuring tattoo motifs.",
     price: "USD 12",
     image:
-      "https://placehold.co/600x600/0a0a0a/f4f1ea?text=Sticker+Pack&font=raleway",
+      "https://placehold.co/600x600/0a0a0a/f4f1ea?text=Tee&font=raleway",
     paymentUrl: "https://buy.stripe.com/test_7sI3eq6oC28Z8xi7sXZEH00",
   },
 ];
