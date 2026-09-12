@@ -21,9 +21,8 @@ export const PRODUCTS: Product[] = [
     title: "Saltwater & Ink",
     description:
       "A 67-page master class in tattoo technique by Mike Skinart, founder of Sailors Tattoo HK. Memoir + 7 chapters covering machines, ink, skin, technique, hygiene, design, and the business of tattooing. ~20,000 words. PDF format, printable. For serious artists only.",
-    price: "HKD 170",
-    image:
-      "https://placehold.co/600x800/0a0a0a/c8a25a?text=Sailor%27s+Ink&font=raleway",
+    price: "HKD 180",
+      image: "/shop/book-cover.jpg",
     paymentUrl: "https://mikeskinart.gumroad.com/l/srilu?_gl=1*dvotp7*_ga*MTI0NDIzNTg2OS4xNzg3OTk3NjQx*_ga_6LJN6D94N6*czE3ODc5OTc2NDAkbzEkZzEkdDE3ODgwMDA2NTAkajU4JGwwJGgw",
     featured: true,
   },
@@ -45,7 +44,7 @@ export const PRODUCTS: Product[] = [
   description:
     "Black cotton t-shirt with the Sailors Tattoo skull emblem design. American traditional style with bold lines. Unisex. Printed on demand and shipped worldwide via Printify.",
   price: "USD 35",
-  image: "https://placehold.co/600x600/0a0a0a/c8a25a?text=Skull+Emblem+Tee&font=raleway",
+    image: "/shop/skull-tee.jpg",
   paymentUrl: "https://www.etsy.com/hk-en/listing/4568783275/sailors-tattoo-skull-emblem-t-shirt",
   featured: true,
 },
