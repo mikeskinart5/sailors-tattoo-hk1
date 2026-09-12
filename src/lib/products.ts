@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "merch-tee-black",
     type: "merch",
-    title: "Limited Prints",
+    title: "Limited Design Tee",
     description:
       "A2 archival giclée prints of three signature tattoo designs, signed and numbered. Edition of 50.",
     price: "USD 120",
@@ -64,7 +64,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "merch-tee-black",
     type: "merch",
-    title: "Limited Prints",
+    title: "Limited Design Tee",
     description:
       "A pack of 5 vinyl die-cut stickers featuring tattoo motifs. Weatherproof, dishwasher-safe.",
     price: "USD 12",
