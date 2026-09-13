@@ -6,7 +6,7 @@ import { About } from "@/components/landing/about";
 import { Contact } from "@/components/landing/contact";
 import { BookingModal } from "@/components/landing/booking-modal";
 import { ShopModal } from "@/components/landing/shop-modal";
-
+import { WhatsAppButton } from "@/components/landing/whatsapp-button";
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden bg-background">
@@ -20,6 +20,8 @@ export default function Home() {
       <BookingModal />
       {/* Shop modal — triggered by any "Shop" button */}
       <ShopModal />
+      {/* Sticky WhatsApp button — always visible */}
+      <WhatsAppButton />
     </main>
   );
 }
