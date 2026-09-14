@@ -59,7 +59,7 @@ export const PRODUCTS: Product[] = [
     price: "USD 38",
     image:
       "https://placehold.co/600x600/0a0a0a/c8a25a?text=Limited+Tee&font=raleway",
-    paymentUrl: "https://https://www.etsy.com/hk-en/listing/4575035053/sailor-skull-helm-tee-sailors-tattoo-t?ref=listings_manager_grid",
+    paymentUrl: "https://www.etsy.com/hk-en/listing/4575035053/sailor-skull-helm-tee-sailors-tattoo-t?ref=listings_manager_grid",
   },
   {
     id: "merch-tee-black",
