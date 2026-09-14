@@ -58,7 +58,7 @@ export const PRODUCTS: Product[] = [
       "A2 archival giclée prints of three signature tattoo designs, signed and numbered. Edition of 50.",
     price: "USD 38",
     image:
-      "/shop/skull-captain.png",
+      "/Users/mikeskinart/Desktop/sailors tattoo hk/skull-captain.png",
     paymentUrl: "https://www.etsy.com/hk-en/listing/4575035053/sailor-skull-helm-tee-sailors-tattoo-t?ref=listings_manager_grid",
   },
   {
