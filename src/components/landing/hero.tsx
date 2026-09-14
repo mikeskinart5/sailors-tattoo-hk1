@@ -136,8 +136,7 @@ export function Hero() {
             className="mt-8 flex flex-col gap-6 md:mt-12 md:flex-row md:items-end md:justify-between"
           >
             <p className="max-w-md text-base leading-relaxed text-foreground/70 md:text-lg">
-              A custom tattoo studio by Mike Skinart — a dreamer who once
-              sailed across the world and fell in love with ink. Every line
+              A custom tattoo studio by Mike Skinart — sailed across the world and fell in love with ink. Every line
               tells the story of where he&apos;s been.
             </p>
 
