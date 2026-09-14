@@ -95,7 +95,7 @@ export function ShopModal() {
                     src={product.image}
                     alt={product.title}
                     loading="lazy"
-                    className="h-full w-full object-cover saturate-0 contrast-110 transition-transform duration-700 group-hover:scale-[1.04]"
+                    className="h-full w-full object-contain saturate-0 contrast-110 transition-transform duration-700 group-hover:scale-[1.04]"
                   />
                   <div className="absolute left-3 top-3 flex gap-2">
                     <span
