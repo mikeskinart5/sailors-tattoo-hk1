@@ -30,8 +30,8 @@ const PROJECTS: Project[] = [
   },
   {
     id: "p3",
-    title: "The Captain",
-    category: "Portraits",
+    title: "Old School",
+    category: "old Bold",
     year: "2023",
     image:"/work/old-school.jpg",
     size: "md",
