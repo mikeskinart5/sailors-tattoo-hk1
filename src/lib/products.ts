@@ -29,13 +29,13 @@ export const PRODUCTS: Product[] = [
   {
     id: "book-sketches",
     type: "book",
-    title: "Sketches from the Sea",
+    title: "Smart Ink",
     description:
-      "A softcover collection of preparatory drawings and graffiti studies — the rough work that becomes the final tattoo.",
-    price: "USD 35",
+      "The first book about the future of tattoo technology. 16 chapters on bio-ink, LED tattoos, NFC chips, graphene sensors, AI design, robot tattooing, living tattoos, and what ink will look like in 2050..",
+    price: "HKD 180",
     image:
-      "https://placehold.co/600x800/0a0a0a/f4f1ea?text=Sketches&font=raleway",
-    paymentUrl: "https://buy.stripe.com/test_8wM3eq4agdUV6HI9ba",
+      "/shop/smart ink.png",
+    paymentUrl: "https://mikeskinart.gumroad.com/l/pxhzs?wanted=true",
   },
 {
   id: "merch-tee-black",
