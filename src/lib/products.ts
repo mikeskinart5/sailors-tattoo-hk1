@@ -35,7 +35,7 @@ export const PRODUCTS: Product[] = [
     price: "HKD 180",
     image:
       "/shop/smart ink.png",
-    paymentUrl: "https://mikeskinart.gumroad.com/l/pxhzs?_gl=1*10chjqb*_ga*MTI0NDIzNTg2OS4xNzg3OTk3NjQx*_ga_6LJN6D94N6*czE3ODk2NDQxNTIkbzM2JGcxJHQxNzg5NjQ2MTUzJGo1MiRsMCRoMA..",
+    paymentUrl: "https://mikeskinart.gumroad.com/l/pxhzs?_gl=1*10chjqb*_ga*MTI0NDIzNTg2OS4xNzg3OTk3NjQx*_ga_6LJN6D94N6*czE3ODk2NDQxNTIkbzM2JGcxJHQxNzg5NjQ2MTUzJGo1MiRsMCRoMA",
   },
 {
   id: "merch-tee-black",
